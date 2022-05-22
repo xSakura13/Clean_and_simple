@@ -1,0 +1,51 @@
+@media (max-width: 1200px) {
+  .banner {
+    height: 500px;
+    .carousel {
+      height: 500px;
+    }
+  }
+}
+@media (max-width: 992px) {
+  .banner{
+    &__svg_points{
+      .svg_circle.one{
+        bottom: 9%;
+      }
+      .svg_circle.two{
+        bottom: 17%;
+      }
+    }
+    &__description{
+      padding-top: 50px;
+    }
+    &__title{
+      font-size: 40px;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .banner{
+    &__description{
+      padding-top: 50px;
+    }
+    &__title{
+      font-size: 40px;
+    }
+  }
+}
+@media (max-width: 576px) {
+  .banner{
+    &__description{
+      padding-top: 25px;
+      font-size: 13px;
+    }
+    &__title{
+      font-size: 30px;
+      line-height: 40px;
+    }
+    &__text{
+      line-height: 25px;
+    }
+  }
+}
