@@ -1,0 +1,31 @@
+@media (max-width: 1200px ) {
+  .partners{
+    &__list{
+      gap: 0;
+      justify-content: space-between;
+    }
+  }
+}
+@media (max-width: 767px ) {
+  .partners{
+    &__list{
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      a{
+        width: calc(100% / 3);
+        justify-content: center;
+      }
+    }
+  }
+}
+@media (max-width: 576px ) {
+  .partners{
+    padding: 30px 0;
+    &__list{
+      a{
+        width: 50%;
+      }
+    }
+  }
+}

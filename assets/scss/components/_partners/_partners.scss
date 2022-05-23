@@ -1,0 +1,24 @@
+.partners{
+  padding: 58px 0;
+  &__list{
+    display: flex;
+    gap: 76px;
+    a{
+      display: flex;
+      align-items: flex-end;
+      svg{
+        path{
+          fill: #D6DAE5;
+        }
+      }
+    }
+    a:hover{
+      svg {
+        path{
+          transition: .5s;
+          fill: #5E81FE;
+        }
+      }
+    }
+  }
+}

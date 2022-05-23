@@ -201,7 +201,7 @@ h6 {
     padding: 10px 18px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .navbar-light .navbar-nav.menu-page {
     padding-bottom: 25px;
   }
@@ -401,6 +401,170 @@ h6 {
   }
   .banner__text {
     line-height: 25px;
+  }
+}
+.partners {
+  padding: 58px 0;
+}
+.partners__list {
+  display: flex;
+  gap: 76px;
+}
+.partners__list a {
+  display: flex;
+  align-items: flex-end;
+}
+.partners__list a svg path {
+  fill: #D6DAE5;
+}
+.partners__list a:hover svg path {
+  transition: 0.5s;
+  fill: #5E81FE;
+}
+
+@media (max-width: 1200px) {
+  .partners__list {
+    gap: 0;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 767px) {
+  .partners__list {
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  .partners__list a {
+    width: calc(100% / 3);
+    justify-content: center;
+  }
+}
+@media (max-width: 576px) {
+  .partners {
+    padding: 30px 0;
+  }
+  .partners__list a {
+    width: 50%;
+  }
+}
+.app {
+  background: #F5F8FF;
+  padding-top: 150px;
+}
+.app__description {
+  font-family: "Roboto", sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 12px;
+  letter-spacing: 0.1em;
+  color: #3D4F9F;
+  padding: 70px 0 27px;
+}
+.app__title {
+  font-family: "Quicksand", sans-serif;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 45px;
+  color: #3D4F9F;
+  padding-bottom: 27px;
+}
+.app__title span {
+  font-weight: 300;
+}
+.app__text {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0.03em;
+  color: #8D96BD;
+  padding-bottom: 47px;
+}
+.app__view-video {
+  font-family: "Quicksand", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 16px;
+  padding: 13px 25px;
+  background: #4C85FF;
+  color: #ffffff;
+  border: 1px solid #4C85FF;
+}
+.app__view-video:hover {
+  background: transparent;
+  color: #4C85FF;
+}
+.app__view-video:hover svg path {
+  fill: #4C85FF;
+}
+.app__features {
+  color: #ADB4D2;
+  font-family: "Quicksand", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 16px;
+  padding: 13px 25px;
+  border: 1px solid #ADB4D2;
+}
+.app__features:hover {
+  background: #ADB4D2;
+  color: #4C85FF;
+}
+.app__img {
+  margin-left: -5%;
+}
+.app__img img {
+  width: 118%;
+}
+
+@media (max-width: 1400px) {
+  .app__img img {
+    width: 105%;
+  }
+}
+@media (max-width: 1200px) {
+  .app {
+    padding-top: 100px;
+  }
+  .app__description {
+    padding-top: 40px;
+  }
+  .app__img {
+    margin: 0;
+  }
+}
+@media (max-width: 1024px) {
+  .app__img img {
+    width: 100%;
+  }
+}
+@media (max-width: 992px) {
+  .app__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 576px) {
+  .app {
+    padding-top: 50px;
+  }
+  .app__img {
+    margin-right: 25%;
+  }
+  .app__img img {
+    width: 150%;
+  }
+  .app__description {
+    font-size: 13px;
+  }
+}
+@media (max-width: 440px) {
+  .app__img {
+    margin: 0;
+  }
+  .app__img img {
+    width: 100%;
   }
 }
 
