@@ -1,0 +1,25 @@
+@media (max-width: 992px) {
+  .faq{
+    padding: 100px 0;
+    &__text{
+      padding: 0 0 20px 0;
+    }
+    &__button{
+      margin: 0 auto;
+    }
+  }
+}
+@media (max-width: 576px) {
+  .faq{
+    padding: 55px 0;
+    &__description{
+      font-size: 13px;
+    }
+    .accordion-body{
+      padding: 0 10px 20px;
+    }
+    .accordion-button:before{
+      margin-left: 0;
+    }
+  }
+}

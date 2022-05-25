@@ -1,0 +1,102 @@
+.customers{
+  background: linear-gradient(180deg, #EAF0FF 0%, #F6F9FF 100%);
+  padding: 105px 0 70px 0;
+  .carousel{
+    height: 270px;
+    overflow: hidden;
+  }
+  .carousel-caption{
+    bottom: unset;
+    padding: unset;
+  }
+  .carousel-control-next-icon,
+  .carousel-control-prev-icon{
+    background: transparent;
+  }
+  .carousel-inner{
+    overflow: unset;
+  }
+  .carousel-indicators button{
+    width: 8px;
+    height: 8px;
+    border-radius: 5px;
+    background: #D1D6E3;
+    border: unset;
+    margin: 0 6px;
+  }
+  .carousel-indicators .active{
+    background-color: #5283FF;
+  }
+  .carousel-indicators{
+    margin-left: unset;
+  }
+  &__info{
+    padding-left: 15%;
+  }
+  &__description{
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 12px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    color: #3D4F9F;
+    padding: 30px 0;
+  }
+  &__title{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 45px;
+    letter-spacing: 0;
+    text-align: left;
+    color: #3D4F9F;
+    padding-bottom: 15px;
+  }
+  &__card{
+    height: 175px;
+    background: #ffffff;
+    position: relative;
+    padding-top: 40px;
+    width: 90%;
+    border: 1px solid #D8E3FE;
+    transition: .5s;
+    &:hover{
+      box-shadow: 10px 10px 25px -6px #676f95;
+    }
+  }
+  &__text{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 23px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: #A4ABC8;
+    max-width: 70%;
+  }
+  &__img{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    background: #D43F3F;
+    left: 40%;
+    bottom: -5rem;
+    overflow: hidden;
+    transition: 1s;
+    &:hover{
+      transform: scale(1.2);
+    }
+  }
+  p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: #676F95;
+    max-width: 95%;
+  }
+}
