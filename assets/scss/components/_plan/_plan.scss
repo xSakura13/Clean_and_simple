@@ -1,0 +1,72 @@
+.plan{
+  background: linear-gradient(229.32deg, #6888FF 12.77%, #5E80FF 73.11%);
+  &__clouds{
+    padding: 91px 0;
+    background-image: url("../img/clouds_plan.svg");
+    background-size: cover;
+  }
+  &__description{
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 12px;
+    letter-spacing: 0.1em;
+    text-align: center;
+    color: #ffffff;
+    padding-bottom: 16px;
+  }
+  &__title{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 48px;
+    font-weight: 300;
+    line-height: 60px;
+    text-align: center;
+    color: #ffffff;
+    padding-bottom: 28px;
+    span{
+      font-weight: 500;
+
+    }
+  }
+  &__text{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: #ffffff;
+    padding-bottom: 40px;
+  }
+  &__button{
+    text-align: center;
+    a{
+      font-family: 'Quicksand', sans-serif;
+      font-size: 13px;
+      line-height: 16px;
+      text-align: center;
+      padding: 13px;
+    }
+  }
+  &__view{
+    font-weight: 700;
+    color: #565F82;
+    border: 1px solid #FFFFFF;
+    background: #FFFFFF;
+    &:hover{
+      box-shadow: 0 5px 15px #6480E8;
+      color: #FFFFFF;
+      background: transparent;
+    }
+  }
+  &__read{
+    color: #C7D3FF;
+    font-weight: 500;
+    border: 1px solid #C7D3FF;
+    &:hover{
+      color: #6888FF;
+      background: #C7D3FF;
+      box-shadow: 0 5px 15px #6480E8;
+    }
+  }
+}

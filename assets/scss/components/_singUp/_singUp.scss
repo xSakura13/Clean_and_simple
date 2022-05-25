@@ -1,0 +1,59 @@
+.singUp{
+  padding: 118px 0;
+  background: #FCFDFF;
+  border-bottom: 1px solid #D8E3FE;
+  &__title{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 23px;
+    color: #3D4F9F;
+    padding-bottom: 18px;
+  }
+  &__text{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0.03em;
+    color: #8D96BD;
+    padding-right: 5%;
+  }
+  &__input{
+    background: #EFEFF7;
+    border-radius: 5px;
+    padding: 21px;
+    width: 100%;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 16px;
+    border: 1px solid #EFEFF7;
+    &:active,
+    &:focus{
+      box-shadow: 0 5px 15px rgba(116, 104, 255, 0.2);
+      background: transparent;
+    }
+  }
+  &__button{
+    padding: 21px 0;
+    width: 100%;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 16px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #4D6CE1;
+    box-shadow: 0 5px 15px rgba(116, 104, 255, 0.2);
+    border-radius: 5px;
+    border: 1px solid #4D6CE1;
+    &:hover{
+      background: transparent;
+      color: #4D6CE1;
+    }
+  }
+  label{
+    display: block;
+  }
+}

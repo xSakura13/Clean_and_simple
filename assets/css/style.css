@@ -1205,7 +1205,7 @@ h6 {
 .customers__img:hover {
   transform: scale(1.2);
 }
-.customers p {
+.customers__card-text {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -1377,6 +1377,156 @@ h6 {
   }
   .faq .accordion-button:before {
     margin-left: 0;
+  }
+}
+.plan {
+  background: linear-gradient(229.32deg, #6888FF 12.77%, #5E80FF 73.11%);
+}
+.plan__clouds {
+  padding: 91px 0;
+  background-image: url("../img/clouds_plan.svg");
+  background-size: cover;
+}
+.plan__description {
+  font-family: "Roboto", sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 12px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  color: #ffffff;
+  padding-bottom: 16px;
+}
+.plan__title {
+  font-family: "Quicksand", sans-serif;
+  font-size: 48px;
+  font-weight: 300;
+  line-height: 60px;
+  text-align: center;
+  color: #ffffff;
+  padding-bottom: 28px;
+}
+.plan__title span {
+  font-weight: 500;
+}
+.plan__text {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #ffffff;
+  padding-bottom: 40px;
+}
+.plan__button {
+  text-align: center;
+}
+.plan__button a {
+  font-family: "Quicksand", sans-serif;
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
+  padding: 13px;
+}
+.plan__view {
+  font-weight: 700;
+  color: #565F82;
+  border: 1px solid #FFFFFF;
+  background: #FFFFFF;
+}
+.plan__view:hover {
+  box-shadow: 0 5px 15px #6480E8;
+  color: #FFFFFF;
+  background: transparent;
+}
+.plan__read {
+  color: #C7D3FF;
+  font-weight: 500;
+  border: 1px solid #C7D3FF;
+}
+.plan__read:hover {
+  color: #6888FF;
+  background: #C7D3FF;
+  box-shadow: 0 5px 15px #6480E8;
+}
+
+@media (max-width: 576px) {
+  .plan__description {
+    font-size: 13px;
+  }
+}
+.singUp {
+  padding: 118px 0;
+  background: #FCFDFF;
+  border-bottom: 1px solid #D8E3FE;
+}
+.singUp__title {
+  font-family: "Quicksand", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23px;
+  color: #3D4F9F;
+  padding-bottom: 18px;
+}
+.singUp__text {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0.03em;
+  color: #8D96BD;
+  padding-right: 5%;
+}
+.singUp__input {
+  background: #EFEFF7;
+  border-radius: 5px;
+  padding: 21px;
+  width: 100%;
+  font-family: "Quicksand", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 16px;
+  border: 1px solid #EFEFF7;
+}
+.singUp__input:active, .singUp__input:focus {
+  box-shadow: 0 5px 15px rgba(116, 104, 255, 0.2);
+  background: transparent;
+}
+.singUp__button {
+  padding: 21px 0;
+  width: 100%;
+  font-family: "Quicksand", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: center;
+  color: #FFFFFF;
+  background: #4D6CE1;
+  box-shadow: 0 5px 15px rgba(116, 104, 255, 0.2);
+  border-radius: 5px;
+  border: 1px solid #4D6CE1;
+}
+.singUp__button:hover {
+  background: transparent;
+  color: #4D6CE1;
+}
+.singUp label {
+  display: block;
+}
+
+@media (max-width: 767px) {
+  .singUp {
+    padding: 70px 0;
+    text-align: center;
+  }
+  .singUp__info {
+    padding-bottom: 30px;
+  }
+}
+@media (max-width: 576px) {
+  .singUp__form {
+    padding-bottom: 10px;
   }
 }
 .footer {
