@@ -1,0 +1,16 @@
+.footer{
+  padding: 90px 0;
+  .container{
+    flex-wrap: wrap;
+  }
+  &__info{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15px;
+    letter-spacing: 0.05em;
+    text-align: left;
+    color: #AEB8D0;
+    padding: 28px 0 0 100px;
+  }
+}

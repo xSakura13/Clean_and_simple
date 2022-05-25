@@ -1,0 +1,118 @@
+.about{
+  padding: 140px 0;
+  text-align: center;
+  .row{
+    padding-bottom: 90px;
+  }
+  &__description{
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 12px;
+    letter-spacing: 0.1em;
+    color: #3D4F9F;
+    padding: 30px 0 20px;
+  }
+  &__title{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #3D4F9F;
+  }
+  &__icon{
+    width: 69px;
+    height: 69px;
+    border-radius: 35px;
+    background-color: #F1F5FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    transition: .5s;
+    &:hover{
+      transform: scale(1.2);
+    }
+  }
+  &__choice{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 25px;
+    color: #4074F8;
+    padding-bottom: 25px;
+  }
+  &__text{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 19px;
+    color: #ADB3CB;
+  }
+  &__button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    span{
+      font-family: 'Open Sans', sans-serif;
+      font-size: 11px;
+      font-weight: 600;
+      line-height: 19px;
+      color: #ADB3CB;
+    }
+    svg{
+      margin: 0 16px;
+    }
+  }
+  &__read,
+  &__get{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 16px;
+    padding: 13px 16px;
+    border-radius: 2px;
+    &:hover{
+      transition: .3s;
+      color: #ffffff;
+    }
+  }
+  &__read{
+    color: #D43F3F;
+    background-color: #FFD7D7;
+    &:hover{
+      background-color: #D43F3F;
+    }
+  }
+  &__get{
+    color: #3A79FF;
+    background-color: #D2E1FF;
+    &:hover{
+      background-color: #3A79FF;
+    }
+  }
+  &__list{
+    position: relative;
+    padding-left: 0;
+  }
+  &__item{
+    padding: 0 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &:not(:last-child):after{
+      content: url("../img/Line2.1.svg");
+      position: absolute;
+      top: 33%;
+      padding-left: 16%;
+    }
+  }
+  .clouds{
+    height: 100%;
+    background-image: url("../img/clouds_bg_blue.svg");
+    background-size: cover;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+}
