@@ -7,9 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;600&family=Quicksand:wght@300;400;500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;600&family=Quicksand:wght@300;400;500;700&family=Roboto:wght@400;500&display=swap"
+          rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../js/WOW-1.1.2/css/libs/animate.css">
     <title>Clean and Simple</title>
 </head>
 <body>
@@ -145,7 +147,7 @@
             </div>
         </div>
     </section>
-    <section class="partners">
+    <section class="partners wow pulse">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-9 partners__list">
@@ -181,7 +183,7 @@
     <section class="app">
         <div class="container">
             <div class="row justify-content-end">
-                <div class="col-xl-4 col-lg-5 col-xs-12 app__content">
+                <div class="col-xl-4 col-lg-5 col-xs-12 app__content wow bounceInUp">
                     <p class="app__description">
                         DESKTOP AND MOBILE APP
                     </p>
@@ -201,7 +203,7 @@
                         See features
                     </a>
                 </div>
-                <div class="col-xl-7 col-lg-7 col-xs-12 app__img">
+                <div class="col-xl-7 col-lg-7 col-xs-12 app__img wow bounceInUp">
                     <div class="img-block">
                         <img src="../assets/img/illustration.png" alt="illustration">
                     </div>
@@ -222,7 +224,7 @@
                         </h2>
                     </div>
                 </div>
-                <ul class="row justify-content-center about__list">
+                <ul class="row justify-content-center about__list wow pulse">
                     <li class="col-xl-2 col-md-3 col-sm-6 about__item">
                         <p class="about__icon">
                             <svg width="18" height="21" viewBox="0 0 18 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -288,7 +290,7 @@
     <section class="analytics">
         <div class="container">
             <div class="row">
-                <div class="col-sm-6 analytics__productivity">
+                <div class="col-sm-6 analytics__productivity wow slideInLeft">
                     <div class="analytics__icon">
                         <svg width="67" height="68" viewBox="0 0 67 68" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M2 33.625C2 16.159 16.2412 2 33.8085 2C37.0463 2 40.1712 2.48098 43.1147 3.375" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
@@ -301,12 +303,12 @@
                             <ellipse cx="64.234" cy="33.625" rx="2.76596" ry="2.75" fill="white"/>
                         </svg>
                     </div>
-                    <p class="analytics__amount productivity-amount">89%</p>
+                    <p class="analytics__amount productivity-amount"><span id="productivity-amount" >89</span>%</p>
                     <p class="analytics__text productivity-text">
                         Customers who have increased their productivity
                     </p>
                 </div>
-                <div class="col-sm-6 analytics__users">
+                <div class="col-sm-6 analytics__users wow slideInRight">
                     <div class="analytics__icon">
                         <svg width="75" height="66" viewBox="0 0 75 66" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <ellipse cx="28.6252" cy="17.5" rx="15.6369" ry="15.5" stroke="#5E80FF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
@@ -315,7 +317,7 @@
                             <path d="M72.9999 39.7027C72.9999 33.6935 68.0804 28.8221 62.0118 28.8221C55.9432 28.8221 51.0237 33.6935 51.0237 39.7027" stroke="#5E80FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
-                    <p class="analytics__amount users-amount">3123</p>
+                    <p class="analytics__amount users-amount"><span id="users-amount">3120</span></p>
                     <p class="analytics__text users-text">
                         Users who have used our application
                     </p>
@@ -789,5 +791,9 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
 </script>
 <script src="../js/script.js"></script>
+<script src="../js/WOW-1.1.2/dist/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
 </body>
 </html>
