@@ -1,3 +1,13 @@
+@media (max-width: 1300px) {
+  .blog{
+    .carousel-control-prev{
+      left: -1%;
+    }
+    .carousel-control-next{
+      right: -1%;
+    }
+  }
+}
 @media (max-width: 1200px) {
   .blog{
     .carousel{
@@ -25,6 +35,12 @@
   .blog{
     &__card{
       padding: 35px 10px;
+    }
+    .carousel-control-prev{
+      left: -5%;
+    }
+    .carousel-control-next{
+      right: -5%;
     }
   }
 }

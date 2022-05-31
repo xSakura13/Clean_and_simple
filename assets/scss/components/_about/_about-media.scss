@@ -1,24 +1,30 @@
 @media (max-width: 1200px) {
   .about{
     &__item{
-      &:not(:last-child):after{
-        padding-left: 21%
-      }
+      padding: 0 35px;
     }
     .clouds{
-      background-size: contain;
+      background-size: auto;
+    }
+  }
+}
+@media (max-width: 992px) {
+  .about{
+    &__item{
+      width: calc(100% / 2);
+      padding-bottom: 20px;
+      &:not(:last-child):after{
+        content: none;
+      }
+    }
+    &__list{
+      flex-wrap: wrap;
     }
   }
 }
 @media (max-width: 767px) {
   .about{
     padding: 60px 0;
-    &__item{
-      padding-bottom: 20px;
-      &:not(:last-child):after{
-        content: none;
-      }
-    }
   }
 }
 @media (max-width: 576px) {
@@ -47,6 +53,9 @@
     }
     &__description{
       font-size: 13px;
+    }
+    &__item{
+      width: 100%;
     }
   }
 }

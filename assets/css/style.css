@@ -98,34 +98,9 @@ h6 {
   padding: 0;
 }
 
-@media (max-width: 1440px) {
+@media (min-width: 1140px) {
   .container {
     max-width: 1206px;
-  }
-}
-@media (max-width: 1206px) {
-  .container {
-    max-width: 992px;
-  }
-}
-@media (max-width: 992px) {
-  .container {
-    max-width: 767px;
-  }
-}
-@media (max-width: 767px) {
-  .container {
-    max-width: 576px;
-  }
-}
-@media (max-width: 576px) {
-  .container {
-    max-width: 320px;
-  }
-}
-@media (max-width: 320px) {
-  .container {
-    max-width: 100%;
   }
 }
 .navbar-light {
@@ -519,7 +494,7 @@ h6 {
 
 @media (max-width: 1400px) {
   .app__img img {
-    width: 105%;
+    width: 100%;
   }
 }
 @media (max-width: 1200px) {
@@ -531,11 +506,6 @@ h6 {
   }
   .app__img {
     margin: 0;
-  }
-}
-@media (max-width: 1024px) {
-  .app__img img {
-    width: 100%;
   }
 }
 @media (max-width: 992px) {
@@ -553,7 +523,7 @@ h6 {
     margin-right: 25%;
   }
   .app__img img {
-    width: 150%;
+    width: 120%;
   }
   .app__description {
     font-size: 13px;
@@ -666,7 +636,8 @@ h6 {
   padding-left: 0;
 }
 .about__item {
-  padding: 0 35px;
+  width: calc(100% / 4);
+  padding: 0 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -674,8 +645,8 @@ h6 {
 .about__item:not(:last-child):after {
   content: url("../img/Line2.1.svg");
   position: absolute;
-  top: 33%;
-  padding-left: 16%;
+  top: 50%;
+  padding-left: 25%;
 }
 .about .clouds {
   height: 100%;
@@ -686,22 +657,28 @@ h6 {
 }
 
 @media (max-width: 1200px) {
-  .about__item:not(:last-child):after {
-    padding-left: 21%;
+  .about__item {
+    padding: 0 35px;
   }
   .about .clouds {
-    background-size: contain;
+    background-size: auto;
+  }
+}
+@media (max-width: 992px) {
+  .about__item {
+    width: calc(100% / 2);
+    padding-bottom: 20px;
+  }
+  .about__item:not(:last-child):after {
+    content: none;
+  }
+  .about__list {
+    flex-wrap: wrap;
   }
 }
 @media (max-width: 767px) {
   .about {
     padding: 60px 0;
-  }
-  .about__item {
-    padding-bottom: 20px;
-  }
-  .about__item:not(:last-child):after {
-    content: none;
   }
 }
 @media (max-width: 576px) {
@@ -730,6 +707,9 @@ h6 {
   .about__description {
     font-size: 13px;
   }
+  .about__item {
+    width: 100%;
+  }
 }
 .analytics {
   overflow: hidden;
@@ -756,6 +736,7 @@ h6 {
 .analytics__users {
   padding: 66px 0 66px 50px;
   position: relative;
+  height: 100%;
   background: linear-gradient(101.48deg, #E9EFFF 41.56%, #E0E9FF 81.53%);
 }
 .analytics__users:after {
@@ -785,6 +766,9 @@ h6 {
 .analytics .productivity-text {
   color: #ffffff;
   text-align: right;
+}
+.analytics .row > * {
+  padding: 0;
 }
 .analytics__text {
   font-family: "Quicksand", sans-serif;
@@ -1031,6 +1015,14 @@ h6 {
   color: #9399AB;
 }
 
+@media (max-width: 1300px) {
+  .blog .carousel-control-prev {
+    left: -1%;
+  }
+  .blog .carousel-control-next {
+    right: -1%;
+  }
+}
 @media (max-width: 1200px) {
   .blog .carousel {
     height: 700px;
@@ -1055,6 +1047,12 @@ h6 {
 @media (max-width: 992px) {
   .blog__card {
     padding: 35px 10px;
+  }
+  .blog .carousel-control-prev {
+    left: -5%;
+  }
+  .blog .carousel-control-next {
+    right: -5%;
   }
 }
 @media (max-width: 767px) {
@@ -1196,9 +1194,8 @@ h6 {
   width: 60px;
   height: 60px;
   border-radius: 30px;
-  background: #D43F3F;
   left: 40%;
-  bottom: -5rem;
+  bottom: -6rem;
   overflow: hidden;
   transition: 1s;
 }
@@ -1236,6 +1233,17 @@ h6 {
     height: 155px;
     margin: 0 auto;
   }
+  .customers__img {
+    bottom: -5rem;
+  }
+}
+@media (max-width: 767px) {
+  .customers__card-text {
+    max-width: 100%;
+  }
+  .customers__card {
+    height: 180px;
+  }
 }
 @media (max-width: 576px) {
   .customers {
@@ -1258,7 +1266,6 @@ h6 {
   }
   .customers__card {
     width: 100%;
-    height: 205px;
   }
   .customers__text {
     max-width: 100%;
@@ -1532,8 +1539,8 @@ h6 {
 .footer {
   padding: 90px 0;
 }
-.footer .container {
-  flex-wrap: wrap;
+.footer__text {
+  width: 100%;
 }
 .footer__info {
   font-family: "Quicksand", sans-serif;
@@ -1555,19 +1562,18 @@ h6 {
   .footer {
     padding: 45px 0;
   }
-  .footer .container .row {
-    width: 50% !important;
-  }
   .footer__info {
     padding-top: 0;
+  }
+  .footer__text {
+    width: 80%;
+    display: flex;
+    align-items: center;
   }
 }
 @media (max-width: 576px) {
   .footer {
     padding: 30px 0;
-  }
-  .footer .container .row {
-    width: 80% !important;
   }
   .footer__info {
     padding: 0;
