@@ -103,7 +103,7 @@
     flex-direction: column;
     align-items: center;
     &:not(:last-child):after{
-      content: url("../img/Line2.1.svg");
+      content: url("../assets/img/Line2.1.svg");
       position: absolute;
       top: 50%;
       padding-left: 25%;
@@ -111,7 +111,7 @@
   }
   .clouds{
     height: 100%;
-    background-image: url("../img/clouds_bg_blue.svg");
+    background-image: url("../assets/img/clouds_bg_blue.svg");
     background-size: cover;
     max-width: 1440px;
     margin: 0 auto;

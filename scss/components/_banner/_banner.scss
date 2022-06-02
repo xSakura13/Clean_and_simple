@@ -49,7 +49,7 @@
       box-shadow: 0 0 15px rgba(82, 131, 255, 0.25);
       position: relative;
       &:hover:after{
-        content: url("../img/speed_icon.svg");
+        content: url("../assets/img/speed_icon.svg");
         position: absolute;
         top: -110px;
         left: -70px;
@@ -81,7 +81,7 @@
     height: 100%;
   }
   &__clouds{
-    background-image: url("../img/clouds_bg.svg");
+    background-image: url("../assets/img/clouds_bg.svg");
     background-size: cover;
     position: absolute;
     width: 100%;
@@ -120,17 +120,21 @@
     padding-bottom: 20px;
   }
   &__play{
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-    background: #ffffff;
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     z-index: 10;
+    transition: .3s;
     a{
       padding-left: 2px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 20px;
+      background: #ffffff;
+    }
+    &:hover{
+      transform: scale(1.2);
     }
   }
   &__content{

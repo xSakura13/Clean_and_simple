@@ -10,6 +10,13 @@
       background: #5E81FE;
       border-radius: 20px;
       margin-right: 70px;
+      transition: .5s;
+      &:hover{
+        width: 30px;
+        height: 30px;
+        background: #4269f6;
+        box-shadow: 0 0 15px #495274;
+      }
     }
     &-nav{
       align-items: center;

@@ -115,6 +115,13 @@ h6 {
   background: #5E81FE;
   border-radius: 20px;
   margin-right: 70px;
+  transition: 0.5s;
+}
+.navbar-light .navbar-brand:hover {
+  width: 30px;
+  height: 30px;
+  background: #4269f6;
+  box-shadow: 0 0 15px #495274;
 }
 .navbar-light .navbar-nav {
   align-items: center;
@@ -246,7 +253,7 @@ h6 {
   position: relative;
 }
 .banner__svg_points .svg_circle:hover:after {
-  content: url("../img/speed_icon.svg");
+  content: url("../assets/img/speed_icon.svg");
   position: absolute;
   top: -110px;
   left: -70px;
@@ -276,7 +283,7 @@ h6 {
   height: 100%;
 }
 .banner__clouds {
-  background-image: url("../img/clouds_bg.svg");
+  background-image: url("../assets/img/clouds_bg.svg");
   background-size: cover;
   position: absolute;
   width: 100%;
@@ -315,18 +322,22 @@ h6 {
   padding-bottom: 20px;
 }
 .banner__play {
+  position: relative;
+  z-index: 10;
+  transition: 0.3s;
+}
+.banner__play a {
+  padding-left: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 40px;
   height: 40px;
   border-radius: 20px;
   background: #ffffff;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 10;
 }
-.banner__play a {
-  padding-left: 2px;
+.banner__play:hover {
+  transform: scale(1.2);
 }
 .banner__content {
   text-align: center;
@@ -643,14 +654,14 @@ h6 {
   align-items: center;
 }
 .about__item:not(:last-child):after {
-  content: url("../img/Line2.1.svg");
+  content: url("../assets/img/Line2.1.svg");
   position: absolute;
   top: 50%;
   padding-left: 25%;
 }
 .about .clouds {
   height: 100%;
-  background-image: url("../img/clouds_bg_blue.svg");
+  background-image: url("../assets/img/clouds_bg_blue.svg");
   background-size: cover;
   max-width: 1440px;
   margin: 0 auto;
@@ -867,10 +878,10 @@ h6 {
   right: -5%;
 }
 .blog .carousel-control-prev-icon {
-  background-image: url("../img/arrow.svg");
+  background-image: url("../assets/img/arrow.svg");
 }
 .blog .carousel-control-next-icon {
-  background-image: url("../img/arrow.svg");
+  background-image: url("../assets/img/arrow.svg");
   transform: rotate(180deg);
 }
 .blog .carousel-indicators button {
@@ -1339,7 +1350,7 @@ h6 {
   height: 11px;
   margin: 0 25px;
   content: "";
-  background-image: url("../img/arrow_acc.svg");
+  background-image: url("../assets/img/arrow_acc.svg");
   background-repeat: no-repeat;
   background-size: var(--bs-accordion-btn-icon-width);
   transition: var(--bs-accordion-btn-icon-transition);
@@ -1348,7 +1359,7 @@ h6 {
   content: unset;
 }
 .faq .accordion-button:not(.collapsed)::before {
-  background-image: url("../img/arrow_acc-active.svg");
+  background-image: url("../assets/img/arrow_acc-active.svg");
 }
 .faq .accordion-button:not(.collapsed) {
   color: #495274;
@@ -1391,7 +1402,7 @@ h6 {
 }
 .plan__clouds {
   padding: 91px 0;
-  background-image: url("../img/clouds_plan.svg");
+  background-image: url("../assets/img/clouds_plan.svg");
   background-size: cover;
 }
 .plan__description {
